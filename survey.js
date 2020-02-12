@@ -37,7 +37,7 @@ rl.question('What is your name? Nicknames are fine. ', (answer) => {
             rl.question('What is your superpower? ', (answer) => {
               console.log(`Thank you for your valuable feedback: ${answer}`);
               user.superPower= answer;
-              process.stdout.write(`${user.name} loves listening to ${user.music} while ${user.activity}. Their favourite meal of the day is ${user.meal}, and they like to eat ${user.food}. Their favourite sport is ${user.sport}, and their superpower is ${}\n`)
+              process.stdout.write(`${user.name} loves listening to ${user.music} while ${user.activity}. Their favourite meal of the day is ${user.meal}, and they like to eat ${user.food}. Their favourite sport is ${user.sport}, and their superpower is ${user.superPower}\n`)
               rl.close();
             })
           })
